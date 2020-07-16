@@ -11,7 +11,7 @@ The database contains 3 tables
 Initial data in table looks like this
 ##### User Table
 ![Initial Tables User]
-(/screenshots/User.png)
+(screenshots/User.png)
 
 ##### HotelRoom Table
 ![Initial Tables HotelRoom]
