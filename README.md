@@ -12,28 +12,35 @@ Initial data in table looks like this
 
 
 
-Requst details for booking API is as follows.
-
-EndPoint: http://localhost:8090/bookHotel
-Request Structure : 
+## Requst details for booking API is as follows.
+### EndPoint:
+```
+ http://localhost:8090/bookHotel
+```
+### Request Structure : 
+```
   {
   "userId":5, //User ID for whoom hotelRoom is to be booked
   "roomId":400 //Hotel Room Id to be booked
   }
-
-Response Structure
+```
+### Response Structure :
+```
 {
     "errorCode": 1, //Error code
     "message": "Invalid User" // Message
 }
-
-Error Codes : 0-> Success
+```
+### Error Codes :
+```
+              0-> Success
               1 -> Invalid User
               2 -> Invalid Room
               3 -> Booking failure
-              
-Message will contain booking id as well as Booking Status in case of success. 
-ex:   {
+```          
+#### Message will contain booking id as well as Booking Status in case of success. 
+```
+   {
     "errorCode": 0,
     "message": "1 : BOOKED"
-}
+}```
