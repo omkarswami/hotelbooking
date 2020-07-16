@@ -4,9 +4,9 @@ Assignment submission for M3BI interview process.
 I have used Spring Boot framework for solutioning given problem and as a database I have used H2.
 
 The database contains 3 tables 
-  User - Saves User Details
-  HotelRoom - Saves Hotel Room Details
-  Booking - Saves Booking transaction details
+ 1. User - Saves User Details
+ 2. HotelRoom - Saves Hotel Room Details
+ 3. Booking - Saves Booking transaction details
   
 Initial data in table looks like this
 ##### User Table
