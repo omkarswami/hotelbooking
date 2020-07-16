@@ -10,9 +10,11 @@ The database contains 3 tables
   
 Initial data in table looks like this
 ##### User Table
+![Initial Tables User]
 (https://github.com/omkarswami/hotelbooking/blob/master/screenshots/User.png)
 
 ##### HotelRoom Table
+![Initial Tables HotelRoom]
 (https://github.com/omkarswami/hotelbooking/blob/master/screenshots/Hotelroom.png)
 
 
@@ -50,4 +52,5 @@ Initial data in table looks like this
 } 
 ```
 ### Booking Table after booking
+![Booking Table After Booking]
 (https://github.com/omkarswami/hotelbooking/blob/master/screenshots/Booking_after.png)
