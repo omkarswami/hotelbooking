@@ -9,7 +9,11 @@ The database contains 3 tables
   Booking - Saves Booking transaction details
   
 Initial data in table looks like this
+##### User Table
+(https://github.com/omkarswami/hotelbooking/blob/master/screenshots/User.png)
 
+##### HotelRoom Table
+(https://github.com/omkarswami/hotelbooking/blob/master/screenshots/Hotelroom.png)
 
 
 ## Requst details for booking API is as follows.
@@ -45,3 +49,5 @@ Initial data in table looks like this
     "message": "1 : BOOKED"
 } 
 ```
+### Booking Table after booking
+(https://github.com/omkarswami/hotelbooking/blob/master/screenshots/Booking_after.png)
