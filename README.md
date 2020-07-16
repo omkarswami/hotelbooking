@@ -19,7 +19,7 @@ Initial data in table looks like this
 
 
 ## Requst details for booking API is as follows.
-### EndPoint:
+### EndPoint: Type : POST
 ```
  http://localhost:8090/bookHotel
 ```
