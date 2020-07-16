@@ -10,6 +10,10 @@ The database contains 3 tables
   
 Initial data in table looks like this
 ##### User Table
+<details>
+  <summary>Some summary</summary>
+  <img alt="Description" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/User.png">
+</details>
 ![Initial Tables User]
 (https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/User.png)
 
