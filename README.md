@@ -10,16 +10,12 @@ The database contains 3 tables
   
 Initial data in table looks like this
 ##### User Table
-<details>
-  <summary>Some summary</summary>
-  <img alt="Description" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/User.png">
-</details>
-![Initial Tables User]
-(https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/User.png)
+
+<img alt="User" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/User.png">
 
 ##### HotelRoom Table
-![Initial Tables HotelRoom]
-(https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/Hotelroom.png)
+<img alt="HotelRoom" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/Hotelroom.png">
+
 
 
 ## Requst details for booking API is as follows.
@@ -56,5 +52,6 @@ Initial data in table looks like this
 } 
 ```
 ### Booking Table after booking
-![Booking Table After Booking]
-(https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/Booking_after.png)
+
+<img alt="Booking After" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/Booking_after.png">
+
