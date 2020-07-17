@@ -51,6 +51,33 @@ Initial data in table looks like this
     "message": "1 : BOOKED"
 } 
 ```
+## Update Bonus points API
+#### Update bonus points and books pendig booking for user if points are enough for booking
+### End point : Type : POST
+```
+http://localhost:8090/updatePoints
+```
+### Request Structure
+```
+{
+	"userId":1, //User Id for which bonus points are alloted
+	"points":100 // additional bonus points alloted
+}
+```
+### Response Structure
+```
+{
+    "errorCode": 0,//Error code integer
+    "message": "USER BONUS POINTS UPDATED SUCCESSFULLY. UPDATED POINTS : 200" // Message string 
+}
+```
+### Error codes
+```
+   0-> Success // Incase of booking update message will contain booked ids and still pending ids
+   1-> Invalid user
+   2-> User points alloted but exception in booking peinding bookings
+```
+
 ### Booking Table after booking
 
 <img alt="Booking After" src="https://raw.githubusercontent.com/omkarswami/hotelbooking/master/screenshots/Booking_after.png">
