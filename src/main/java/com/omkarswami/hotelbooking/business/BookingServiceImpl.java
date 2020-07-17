@@ -1,6 +1,7 @@
 package com.omkarswami.hotelbooking.business;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
@@ -38,6 +39,8 @@ public class BookingServiceImpl implements BookingService {
 			Optional<HotelRoom> room = hotelRoomRepository.findById(request.getRoomId());
 			// check hotelRoom
 			if (room.isPresent()) {
+				//check if booking is pending for the room and cancel the bookings
+				cancelPendingBookingsForRoom(room.get().getId());
 				// if valid create booking
 				return populateBooking(user.get(),room.get());
 			} else {
@@ -89,8 +92,9 @@ public class BookingServiceImpl implements BookingService {
 	 * @param booking
 	 * @return int
 	 * */
+	@Override
 	@Transactional
-	private int createBooking(User user, Booking booking) {
+	public int createBooking(User user, Booking booking) {
 		int bookingId = 0;
 		try {
 			userRepository.save(user);
@@ -99,6 +103,18 @@ public class BookingServiceImpl implements BookingService {
 			System.out.println("Exception occured : " + ex);
 		}
 		return bookingId;
+	}
+	
+	/**
+	 * Method for cancelling bookings of hotel room if user with valid user points tries to book the room
+	 * @param roomId
+	 * */
+	private void cancelPendingBookingsForRoom(int roomId) {
+		List<Booking> pendingBookings = bookingRepository.findPendingBookingsForRoom(roomId);
+		for(Booking booking:pendingBookings) {
+			booking.setStatus(BOOKING_STATUS_CANCELLED);
+			bookingRepository.save(booking);
+		}
 	}
 
 }
